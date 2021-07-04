@@ -1,13 +1,12 @@
 import { GetServerSideProps } from 'next'
-import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import moment from 'moment';
 import axios from "axios";
 import Head from "next/head";
 import styles from "styles/Home.module.css";
 import detailStyles from "styles/Detail.module.css";
 import DailyWeatherCard from "components/dailyWeatherCard";
 import InfoCard from 'components/infoCard';
-import moment from 'moment';
 
 interface Props {
   weather: any;
@@ -16,10 +15,6 @@ interface Props {
 const CityDetail = ({weather}: Props) => {
   const router = useRouter();
   const { title } = router.query;
-
-  useEffect(() => {
-    console.log('weather', weather);
-  }, [weather])
 
   return (
     <div>

@@ -214,6 +214,7 @@
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 3px 3px -5px;
+  margin: 10px 0px;
 }
 
 .dailyWeatherCard span {
@@ -225,8 +226,25 @@
 }
 
 @media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-self: stretch;
+    align-items: initial;
+  }
+  .header a {
+    padding-bottom: 10px;
+  }
+
+  .header .profile {
+    justify-content: flex-start;
+    padding-top: 20px;
+  }
   .grid {
     width: 100%;
-    flex-direction: column;
+    /* flex-direction: column; */
+  }
+  .grid .cardContainer {
+    width: 50%;
+    /* flex-direction: column; */
   }
 }

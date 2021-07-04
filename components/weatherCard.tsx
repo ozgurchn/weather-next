@@ -30,7 +30,7 @@ const toBase64 = (str: string) =>
 
 const WeatherCard = ({ temp, name, imageUrl, imageAlt, onClick }: Props) => {
   return (
-    <div className={styles.cardContainer} onClick={onClick}>
+    <div role={'button'} className={styles.cardContainer} onClick={onClick}>
       <div className={styles.card}>
         <Image
           quality={20}

@@ -8,6 +8,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
   margin: 3rem;
 }
 
@@ -20,7 +21,8 @@
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 3px 3px -5px;
-  min-width: 150px;
+  /* min-width: 150px; */
+  margin: 10px 0px;
 }
 
 .infoCard .infoCardTitle {
